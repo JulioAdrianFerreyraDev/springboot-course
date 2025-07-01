@@ -1,7 +1,32 @@
 package com.luv2code.cruddemo.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+/**
+ * Entity class representing a Student.
+ * 
+ * <p>This class is mapped to the "student" table in the database using JPA annotations.
+ * It contains fields for the student's id, first name, last name, and email address.
+ * </p>
+ * 
+ * <ul>
+ *   <li>{@code id} - The primary key for the student entity, auto-generated.</li>
+ *   <li>{@code firstName} - The student's first name.</li>
+ *   <li>{@code lastName} - The student's last name.</li>
+ *   <li>{@code email} - The student's email address.</li>
+ * </ul>
+ * 
+ * <p>Includes constructors for creating new Student instances, as well as standard
+ * getters and setters for each field. Overrides {@code toString()} for a string
+ * representation of the student object.</p>
+ * 
+ * @author Your Name
+ */
 @Entity
 @Table(name="student")
 public class Student {
@@ -38,6 +63,11 @@ public class Student {
         return id;
     }
 
+    /**
+     * Sets the unique identifier for the student.
+     *
+     * @param id the unique identifier to set
+     */
     public void setId(int id) {
         this.id = id;
     }
