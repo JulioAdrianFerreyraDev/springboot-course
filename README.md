@@ -47,3 +47,14 @@ I'm looking forward to seeing you in other luv2code courses!
 * [Facebook Page - luv2code](https://www.facebook.com/luv2codetv)
 * [X (Twitter) - luv2code](https://twitter.com/luv2codetv)
 * [LinkedIn](https://www.linkedin.com/in/chaddarby/)
+
+## vscode setup
+
+```groovy
+use: developmentOnly 'org.springframework.boot:spring-boot-devtools'
+```
+
+run:
+```bash
+./gradlew build --continuous
+```
