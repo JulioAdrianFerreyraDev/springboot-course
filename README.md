@@ -50,11 +50,23 @@ I'm looking forward to seeing you in other luv2code courses!
 
 ## vscode setup
 
+
+### Development
+
+add the following development dependency in y your build.gradle: 
 ```groovy
-use: developmentOnly 'org.springframework.boot:spring-boot-devtools'
+developmentOnly 'org.springframework.boot:spring-boot-devtools'
 ```
 
-run:
+### Set up your /resources/application.properties and add the following properties:
+```plaintext
+spring.devtools.livereload.enabled=true
+spring.devtools.restart.enabled=true
+spring.devtools.livereload.port=35729
+spring.devtools.restart.additional-paths=src/main/java
+```
+
+Or you can manually run before running the spring application:
 ```bash
 ./gradlew build --continuous
 ```
