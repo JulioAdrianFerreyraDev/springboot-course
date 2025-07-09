@@ -60,9 +60,9 @@ developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 ### Set up your /resources/application.properties and add the following properties:
 ```plaintext
-spring.devtools.livereload.enabled=true
+# spring.devtools.livereload.enabled=true # optional
 spring.devtools.restart.enabled=true
-spring.devtools.livereload.port=35729
+# spring.devtools.livereload.port=35729 # optional
 spring.devtools.restart.additional-paths=src/main/java
 ```
 
